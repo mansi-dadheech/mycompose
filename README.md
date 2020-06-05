@@ -23,7 +23,9 @@ In drupal service,it uses an image which binds the container and the host machin
 The volumes key mounts current directory on the host to /var/www/html inside the container.
 
 In database service here dbos, it also uses an image downloaded from docker hub mounting mysql_storage_new directory on host OS to /var/lib/mysql in container.
+
 3. Environment:  We canset environment variables in containers by this key. In this setting password and username for database.
+
 4. Volumes: By this key initializing all volumes.
 
 * From the drupal directory, start Docker containers:
