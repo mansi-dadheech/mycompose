@@ -2,6 +2,9 @@
 Here is my first docker project of creating multi-tier architecture for Drupal and MySql using docker compose.Docker-compose is controlled with the docker-compose.yml file, which tells Docker which containers to start, how to network them together so they serve Drupal, and how to connect them to the host machine.
 Drupal is content management software. It's used to make many of the websites and applications. 
 
+![Untitled Diagram(1)](https://user-images.githubusercontent.com/48363834/83902437-fd410680-a779-11ea-8ff6-931ce90f3f54.png)
+
+
 Here are the steps that I followed:
 
 STEP 1: General Set UP:
