@@ -6,7 +6,17 @@ Here are the steps that I followed:
 
 STEP 1: General Set UP:
 * Installation of Docker Docker Compose.
+We used docker-compose to create infrastructure. Docker compose can be download from browser.
+some docker compose commands:
+
+#docker-compose up
+
+#docker-compose start
+
+#docker-compose stop
+
 * Starting Docker Services.
+
 #systemctl enable docker
 
 
