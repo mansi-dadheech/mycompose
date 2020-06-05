@@ -7,6 +7,8 @@ Here are the steps that I followed:
 STEP 1: General Set UP:
 * Installation of Docker Docker Compose.
 * Starting Docker Services.
+#systemctl enable docker
+
 
 STEP 2: Setting up Drupal and Mysql:
 * Creating a new directory called drupal and cd into it:
@@ -14,6 +16,15 @@ STEP 2: Setting up Drupal and Mysql:
 
 ![Screenshot (51)](https://user-images.githubusercontent.com/48363834/82206582-1d716880-9926-11ea-8bdd-8cc6a20e38d4.png)
 
+In this yaml file, there are various environment variables for creating this architecture:
+1. Version: Giving version value.
+2. Services: In this there are basically two services one for drupal framework and other for database mysql.
+In drupal service,it uses an image which binds the container and the host machine to the exposed port 8081.
+The volumes key mounts current directory on the host to /var/www/html inside the container.
+
+In database service here dbos, it also uses an image downloaded from docker hub mounting mysql_storage_new directory on host OS to /var/lib/mysql in container.
+3. Environment:  We canset environment variables in containers by this key. In this setting password and username for database.
+4. Volumes: By this key initializing all volumes.
 
 * From the drupal directory, start Docker containers:
 #docker-compose up 
